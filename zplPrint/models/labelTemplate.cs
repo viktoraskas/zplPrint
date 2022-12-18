@@ -6,19 +6,18 @@ using System.Threading.Tasks;
 
 namespace zplPrint.models
 {
+
     internal class labelTemplate
     {
+        public labelParameters parameters;
         public List<labelData> Records { get; set; }
-
     }
-    internal class labelParameters
+    public class labelParameters
     {
         public int Width { get; set; }
         public int Height { get; set; }
         public int Dpi { get; set; }
         public Boolean Cut { get; set; }
-
-
     }
 
     internal class labelData
