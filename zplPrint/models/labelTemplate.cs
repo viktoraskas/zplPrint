@@ -12,10 +12,11 @@ namespace zplPrint.models
         public labelParameters parameters;
         public List<labelData> Records { get; set; }
     }
-    public class labelParameters
+    internal class labelParameters
     {
+        public string printerName { get; set; }
         public int Width { get; set; }
-        public int Height { get; set; }
+        public int? Height { get; set; }
         public int Dpi { get; set; }
         public Boolean Cut { get; set; }
     }
