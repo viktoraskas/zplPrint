@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 namespace zplPrint.models
 {
 
-    internal class labelTemplate
+    public class labelTemplate
     {
-        public labelParameters parameters;
+        public labelParameters Parameters { get; set; }
         public List<labelData> Records { get; set; }
     }
-    internal class labelParameters
+    public class labelParameters
     {
         public string printerName { get; set; }
         public int Width { get; set; }
@@ -21,7 +21,7 @@ namespace zplPrint.models
         public Boolean Cut { get; set; }
     }
 
-    internal class labelData
+    public class labelData
     {
         public string Text { get; set; }
         public int Top { get; set; }
@@ -36,7 +36,7 @@ namespace zplPrint.models
         public Boolean ConvertToGraphic { get; set; }
     }
 
-    internal enum Aligment { Left, Rigth, Top, Bottom, Center, LeftCenter, RightCenter, TopCenter, BottomCenter,
+    public enum Aligment { Left, Rigth, Top, Bottom, Center, LeftCenter, RightCenter, TopCenter, BottomCenter,
                             LeftTop, LeftBottom, RightTop, RightBottom}
 
 }
